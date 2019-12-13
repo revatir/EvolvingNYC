@@ -3,8 +3,24 @@ Evolving NYC</h4>
 
 1. <b>Title:</b> Evolving NYC
 2. <b>Description:</b> A website that aims to track reconstruction plans in the city by using the NYC Department of Buildings permit database. I want to collect data on how many "Demolition" permits were issued in the last ~5 years, how many "New Building" permits were issued in the last ~5 years, and depict this data by year. I also want to separate this information by borough (and, if I have time, narrow it down to the counsel district that represents each NYC neighborhood (or the neighborhoods themselves)). The ultimate goal is to create a tool that organically tracks plans for development in the city so residents can see projected changes in their community (though I won’t get to making it this granular in one week).
-3. <b>Wireframes:</b> Mockups of your app on desktop, tablet, and mobile. - PLEASE SEE ATTACHED
-4. <b>Component Hierarchy:</b> A visual tree of your components, depicting the parent/child relationships, as well as an indication of which will be class components, requiring state, and which will be functional components, taking props. - PLEASE SEE ATTACHED
+3. <b>Wireframes:</b> See Attached
+
+4. <b>Component Hierarchy:</b> A visual tree of your components, depicting the parent/child relationships, as well as an indication of which will be class components, requiring state, and which will be functional components, taking props.
+
+src
+|__ assets/
+      |__ images
+|__ components/
+      |__ Header.jsx (class)
+      |__ Queens.jsx (class)
+      |__ Brooklyn.jsx (class)
+      |__ Manhattan.jsx (class)
+      |__ Bronx.jsx (class)
+      |__ Staten Island.jsx (class)
+      |__ Footer.jsx (functional) (class)
+  |__ services/
+      |__api-helper.jsx (functional)
+
 5. <b>API: </b>
     1. API - https://data.cityofnewyork.us/resource/ipu4-2q9a.json
     2. Documentation - https://dev.socrata.com/foundry/data.cityofnewyork.us/ipu4-2q9a
