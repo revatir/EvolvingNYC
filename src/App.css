@@ -1,5 +1,8 @@
+@import-normalize;
+
 body {
-  background-color: ;
+  background-color: #F9F9F9;
+  font-family: "Poppins", sans-serif;
 }
 
 header {
@@ -8,4 +11,5 @@ header {
 
 h1 {
   text-align: center;
+  font-weight: 300;
 }

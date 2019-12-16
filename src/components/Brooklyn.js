@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
+
+//Custom Component
 import BoroughData from './BoroughData';
 
 class Brooklyn extends Component {
   constructor(props) {
     super(props)
-
     this.state = {
-
     }
   }
 

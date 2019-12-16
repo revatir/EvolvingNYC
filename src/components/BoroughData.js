@@ -42,7 +42,7 @@ class BoroughData extends Component {
       demolitionPermits = demolitionResponse.length;
       newBuildingPermits = newBuildingResponse.length
 
-      //Calculating Percent Change
+      //Calculating Percent Change from Data
       let percentChange = (A, B) =>
         Math.round(
           100 * Math.abs(
@@ -62,7 +62,6 @@ class BoroughData extends Component {
         clickedComment,
         clicked,
       })
-      console.log(this.state.demolitionPermits, this.state.clicked, this.state.clickedComment)
     } else {
       clicked = false
       this.setState({
@@ -72,6 +71,7 @@ class BoroughData extends Component {
   }
 
   render() {
+
     return (
       <div>
         {this.props.year.map((year, index) =>
@@ -93,4 +93,4 @@ class BoroughData extends Component {
   }
 }
 
-export default BoroughData
+export default BoroughData;

@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+
+//Custom Component
 import BoroughData from './BoroughData';
 
 class Queens extends Component {
@@ -6,7 +8,6 @@ class Queens extends Component {
     super(props)
 
     this.state = {
-
     }
   }
 
