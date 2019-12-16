@@ -6,7 +6,7 @@ import { FetchData } from '../services/apihelper'
 //Custom Component
 import PermitsIssued from './PermitsIssued'
 
-class Bronx extends Component {
+class Borough extends Component {
   constructor(props) {
     super(props)
 
@@ -26,15 +26,18 @@ class Bronx extends Component {
     let clickedComment = this.state.clickedComment;
     clickedComment = clickedId;
 
+    let borough = document.querySelector(".borough").innerHTML;
+    borough = borough.toUpperCase();
+
     //Pulling Permit Data
     if (clicked === false) {
       clicked = true
       let demolitionPermits = this.state.demolitionPermits;
       let newBuildingPermits = this.state.newBuildingPermits;
-      let previousYearDemolitionResponse = await FetchData("DM", "BRONX", year - 1);
-      let previousYearNewBuildingResponse = await FetchData("NB", "BRONX", year - 1);
-      let demolitionResponse = await FetchData("DM", "BRONX", year);
-      let newBuildingResponse = await FetchData("NB", "BRONX", year);
+      let previousYearDemolitionResponse = await FetchData("DM", borough, year - 1);
+      let previousYearNewBuildingResponse = await FetchData("NB", borough, year - 1);
+      let demolitionResponse = await FetchData("DM", borough, year);
+      let newBuildingResponse = await FetchData("NB", borough, year);
 
       demolitionPermits = demolitionResponse.length;
       newBuildingPermits = newBuildingResponse.length
@@ -71,7 +74,7 @@ class Bronx extends Component {
   render() {
     return (
       <div>
-        <h1>Bronx</h1>
+        <h1 className="borough">Bronx</h1>
         <div>
           {this.props.year.map((year, index) =>
             <div key={index} className="year">
@@ -93,4 +96,4 @@ class Bronx extends Component {
   }
 }
 
-export default Bronx
+export default Borough

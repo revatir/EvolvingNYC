@@ -6,7 +6,7 @@ import { Route } from 'react-router-dom'
 
 //Custom Components
 import Header from './components/Header'
-import Bronx from './components/Bronx'
+import Borough from './components/Borough'
 import Brooklyn from './components/Brooklyn'
 import Manhattan from './components/Manhattan'
 import Queens from './components/Queens'
@@ -35,7 +35,7 @@ class App extends Component {
         <Route path="/Brooklyn" component={Brooklyn} />
         <Route path="/Manhattan" component={Manhattan} />
         <Route path="/Bronx" render={(props) =>
-          <Bronx
+          <Borough
             year={this.state.year}
           />
         } />
