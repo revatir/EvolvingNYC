@@ -31,11 +31,16 @@ class Bronx extends Component {
 
       let demolitionPermits = this.state.demolitionPermits;
       let newBuildingPermits = this.state.newBuildingPermits;
+      let previousYearDemolitionResponse = await FetchData("DM", "BRONX", year - 1);
+      let previousYearNewBuildingResponse = await FetchData("NB", "BRONX", year - 1);
       let demolitionResponse = await FetchData("DM", "BRONX", year);
       let newBuildingResponse = await FetchData("NB", "BRONX", year);
 
       demolitionPermits = demolitionResponse.length;
       newBuildingPermits = newBuildingResponse.length
+
+      let lastYearDemolitionRatio = previousYearDemolitionResponse.length / demolitionPermits
+      let lastYearNewBuildingRatio = previousYearNewBuildingResponse.length / newBuildingPermits
 
       this.setState({
         demolitionPermits,
