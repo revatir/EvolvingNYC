@@ -17,18 +17,18 @@ class Bronx extends Component {
       lastYearNewBuildingRatio: 0,
       clickedComment: "",
       clicked: false,
-      percentChange: 0,
     }
   }
 
   getPermitData = async (year, clickedId) => {
-    let clicked = this.state.clicked
-    let clickedComment = this.state.clickedComment
-    clickedComment = clickedId
+    //Establishing Click Functionality
+    let clicked = this.state.clicked;
+    let clickedComment = this.state.clickedComment;
+    clickedComment = clickedId;
 
+    //Pulling Permit Data
     if (clicked === false) {
       clicked = true
-
       let demolitionPermits = this.state.demolitionPermits;
       let newBuildingPermits = this.state.newBuildingPermits;
       let previousYearDemolitionResponse = await FetchData("DM", "BRONX", year - 1);
@@ -39,9 +39,18 @@ class Bronx extends Component {
       demolitionPermits = demolitionResponse.length;
       newBuildingPermits = newBuildingResponse.length
 
-      let lastYearDemolitionRatio = previousYearDemolitionResponse.length / demolitionPermits
-      let lastYearNewBuildingRatio = previousYearNewBuildingResponse.length / newBuildingPermits
+      //Calculating Percent Change
+      let percentChange = (A, B) =>
+        Math.round(
+          100 * Math.abs(
+            (A - B) / ((A + B) / 2)
+          )
+        );
+      ;
+      let lastYearDemolitionRatio = percentChange(previousYearDemolitionResponse.length, demolitionPermits);
+      let lastYearNewBuildingRatio = percentChange(previousYearNewBuildingResponse.length, newBuildingPermits);
 
+      //Setting State
       this.setState({
         demolitionPermits,
         newBuildingPermits,
