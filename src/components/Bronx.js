@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import BoroughData from './BoroughData';
 
-class Queens extends Component {
+class Bronx extends Component {
   constructor(props) {
     super(props)
 
@@ -13,10 +13,10 @@ class Queens extends Component {
   render() {
     return (
       <div>
-        <h1 className="borough">Queens</h1>
+        <h1 className="borough">Bronx</h1>
         <BoroughData year={this.props.year} />
       </div >
     )
   }
 }
-export default Queens
+export default Bronx

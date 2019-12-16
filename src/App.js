@@ -6,7 +6,7 @@ import { Route } from 'react-router-dom'
 
 //Custom Components
 import Header from './components/Header'
-import Borough from './components/Borough'
+import Bronx from './components/Bronx'
 import Brooklyn from './components/Brooklyn'
 import Manhattan from './components/Manhattan'
 import Queens from './components/Queens'
@@ -29,17 +29,30 @@ class App extends Component {
   render() {
     return (
       <div className="App" >
-        <Header />
+        <Header
+          year={this.state.year}
+        />
         <Route path="/" />
-        <Route path="/Queens" component={Queens} />
-        <Route path="/Brooklyn" component={Brooklyn} />
-        <Route path="/Manhattan" component={Manhattan} />
-        <Route path="/Bronx" render={(props) =>
-          <Borough
+        <Route path="/Queens" render={(props) =>
+          <Queens
             year={this.state.year}
-          />
-        } />
-        <Route path="/StatenIsland" component={StatenIsland} />
+          />} />
+        <Route path="/Brooklyn" render={(props) =>
+          <Brooklyn
+            year={this.state.year}
+          />} />
+        <Route path="/Manhattan" render={(props) =>
+          <Manhattan
+            year={this.state.year}
+          />} />
+        <Route path="/Bronx" render={(props) =>
+          <Bronx
+            year={this.state.year}
+          />} />
+        <Route path="/StatenIsland" render={(props) =>
+          <StatenIsland
+            year={this.state.year}
+          />} />
       </div>
     );
   }

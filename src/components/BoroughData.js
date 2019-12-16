@@ -6,7 +6,7 @@ import { FetchData } from '../services/apihelper'
 //Custom Component
 import PermitsIssued from './PermitsIssued'
 
-class Borough extends Component {
+class BoroughData extends Component {
   constructor(props) {
     super(props)
 
@@ -74,26 +74,23 @@ class Borough extends Component {
   render() {
     return (
       <div>
-        <h1 className="borough">Bronx</h1>
-        <div>
-          {this.props.year.map((year, index) =>
-            <div key={index} className="year">
-              <h4 onClick={() => this.getPermitData(year, index)}>{year}</h4>
-              {this.state.clicked && this.state.clickedComment === index ?
-                <PermitsIssued
-                  lastYearDemolitionRatio={this.state.lastYearDemolitionRatio}
-                  lastYearNewBuildingRatio={this.state.lastYearNewBuildingRatio}
-                  demolitionPermits={this.state.demolitionPermits}
-                  newBuildingPermits={this.state.newBuildingPermits}
-                />
-                : null
-              }
-            </div>
-          )}
-        </div>
-      </div >
+        {this.props.year.map((year, index) =>
+          <div key={index} className="year">
+            <h4 onClick={() => this.getPermitData(year, index)}>{year}</h4>
+            {this.state.clicked && this.state.clickedComment === index ?
+              <PermitsIssued
+                lastYearDemolitionRatio={this.state.lastYearDemolitionRatio}
+                lastYearNewBuildingRatio={this.state.lastYearNewBuildingRatio}
+                demolitionPermits={this.state.demolitionPermits}
+                newBuildingPermits={this.state.newBuildingPermits}
+              />
+              : null
+            }
+          </div>
+        )}
+      </div>
     )
   }
 }
 
-export default Borough
+export default BoroughData

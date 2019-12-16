@@ -1,11 +1,22 @@
-import React from 'react';
+import React, { Component } from 'react';
+import BoroughData from './BoroughData';
 
-function StatenIsland() {
-  return (
-    <div>
-      <h1>Staten Island</h1>
-    </div>
-  )
+class StatenIsland extends Component {
+  constructor(props) {
+    super(props)
+
+    this.state = {
+
+    }
+  }
+
+  render() {
+    return (
+      <div>
+        <h1 className="borough">Staten Island</h1>
+        <BoroughData year={this.props.year} />
+      </div >
+    )
+  }
 }
-
 export default StatenIsland
