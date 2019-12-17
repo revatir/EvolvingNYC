@@ -41,11 +41,7 @@ class Header extends Component {
   }
 
   render() {
-    const headerWrapper = {
-      width: "100%",
-    }
     const header = {
-      backgroundImage: "../assets/skyline.png",
       paddingTop: "2vh",
       paddingBottom: "2vh",
       margin: "-5vh -5vw 5vh -5vw",
@@ -58,8 +54,8 @@ class Header extends Component {
       fontSize: "60px",
       fontWeight: "300",
       paddingBottom: "3vh",
-      margin: "8vh 30vw 7vh 30vw",
-      borderBottom: "1.5vh dotted black",
+      margin: "26vh 30vw 5vh 30vw",
+      borderBottom: "1.5vh dotted #EABC17",
     }
 
     const home = {
@@ -69,8 +65,10 @@ class Header extends Component {
 
     const description = {
       fontSize: "1.25vw",
-      margin: "-4vh auto 2vh auto",
-      color: "black",
+      backgroundColor: "black",
+      padding: "15px",
+      margin: "-4vh 0 0vh 0",
+      color: "#EABC17",
     }
 
     const selectBorough = {
@@ -82,18 +80,18 @@ class Header extends Component {
       margin: "-5vh -5vw 5vh -5vw",
     }
 
-    const image = {
-      margin: "2vh 0 -20vh 0",
-      height: "30vh",
-    }
+    // const image = {
+    //   margin: "2vh 0 -20vh 0",
+    //   height: "30vh",
+    // }
 
     return (
       <div>
-        <div style={headerWrapper}>
+        <div className="headerWrapper">
           <header style={header}
             onMouseEnter={this.hoverEnter}
             onMouseLeave={this.hoverLeave}>
-            <img src={skyline} alt="skyline" style={image} />
+            {/* <img src={skyline} alt="skyline" style={image} /> */}
             <Link to="/" style={home} onClick={this.loadMenu}>
               <h1 style={h1} className="hoverHeader">Evolving NYC</h1>
             </Link>

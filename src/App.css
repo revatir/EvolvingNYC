@@ -6,6 +6,12 @@ body {
   text-align: center;
 }
 
+.headerWrapper {
+  background-image: url(./assets/skyline.png);
+  background-repeat: repeat-x;
+  margin: -5vw -5vh -5vw -5vh;
+}
+
 .boroughWrapper {
   background-color:rgba(239, 239, 239, 0.8);
   padding: 1vw;
