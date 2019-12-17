@@ -72,17 +72,24 @@ class BoroughData extends Component {
 
   render() {
     const dataContainer = {
-      display: "flex",
-      flexDirection: "column",
-      justifyContent: "center",
-      alignItems: "center",
+      // display: "flex",
+      // flexDirection: "column",
+      // justifyContent: "center",
+      // alignItems: "center",
+      display: "grid",
+      gridTemplateColumns: "10vw 10vw 10vw 10vw 10vw",
+
+    }
+
+    const year = {
+
     }
 
     return (
       <div style={dataContainer} >
         {
           this.props.year.map((year, index) =>
-            <div key={index} className="year">
+            <div key={index}>
               <h4 onClick={() => this.getPermitData(year, index)}>{year}</h4>
               {this.state.clicked && this.state.clickedComment === index ?
                 <PermitsIssued
