@@ -72,17 +72,10 @@ class BoroughData extends Component {
 
   render() {
     const dataContainer = {
-      // display: "flex",
-      // flexDirection: "column",
-      // justifyContent: "center",
-      // alignItems: "center",
       display: "grid",
       gridTemplateColumns: "10vw 10vw 10vw 10vw 10vw",
-
-    }
-
-    const year = {
-
+      justifyContent: "center",
+      textAlign: "justify",
     }
 
     return (

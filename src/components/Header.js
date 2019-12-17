@@ -45,23 +45,22 @@ class Header extends Component {
       width: "100%",
     }
     const header = {
-      backgroundColor: "#EFDDD2",
+      backgroundColor: "#EFEFEF",
       paddingTop: "2vh",
       paddingBottom: "2vh",
-      margin: "-5vh -5vw 2vh -5vw",
-      borderBottom: ".5vh solid black",
+      margin: "-5vh -5vw 5vh -5vw",
+      // borderBottom: ".5vh solid black",
     }
 
     const h1 = {
-      color: "#EFDDD2",
+      color: "#EFEFEF",
       fontFamily: "Fjalla One",
       fontSize: "70px",
       fontWeight: "300",
-      letterSpacing: "5px",
-      textShadow: "3px 4px black",
+      letterSpacing: this.state.hover ? "7px" : "3px",
       paddingBottom: "5vh",
       margin: "6vh 20vw 7vh 20vw",
-      borderBottom: "1.5vh dotted black",
+      borderBottom: "1vh dotted black",
     }
 
     const home = {
@@ -76,15 +75,16 @@ class Header extends Component {
 
     const selectBorough = {
       fontSize: "24px",
-      color: "#EFDDD2",
+      backgroundColor: "black",
+      color: "#EFEFEF",
       padding: "15px",
-      borderBottom: "1px solid #EFDDD2",
-      margin: "4vh 35vw",
+      // borderBottom: "1px solid #EFEFEF",
+      margin: "-5vh -5vw 5vh -5vw",
     }
 
     const image = {
       margin: "2vh 0 -20vh 0",
-      height: "35vh"
+      height: "31vh",
     }
 
     return (
@@ -95,7 +95,7 @@ class Header extends Component {
             onMouseLeave={this.hoverLeave}>
             <img src={skyline} alt="skyline" style={image} />
             <Link to="/" style={home} onClick={this.loadMenu}>
-              <h1 style={h1}>Evolving NYC</h1>
+              <h1 style={h1} className="siteHeader">Evolving NYC</h1>
             </Link>
             <p style={description}>Tracking reconstruction plans in the city using the NYC Department of Buildings permit database </p>
           </header >
