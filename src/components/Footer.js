@@ -14,7 +14,7 @@ function Footer() {
     borderRadius: "15px",
     margin: "10vh 40vw 1vh 40vw",
     color: "black",
-    fontSize: "1.75vh",
+    fontSize: "2vh",
     fontWeight: "100",
   }
 

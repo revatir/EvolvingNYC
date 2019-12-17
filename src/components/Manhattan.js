@@ -12,8 +12,9 @@ class Queens extends Component {
   }
 
   render() {
+
     return (
-      <div>
+      <div className="boroughWrapper">
         <h1 className="borough">Manhattan</h1>
         <BoroughData year={this.props.year} />
       </div >

@@ -45,7 +45,8 @@ class Header extends Component {
       width: "100%",
     }
     const header = {
-      backgroundColor: "#EFEFEF",
+      backgroundColor: "#EFE7D2",
+      backgroundImage: "../assets/skyline.png",
       paddingTop: "2vh",
       paddingBottom: "2vh",
       margin: "-5vh -5vw 5vh -5vw",
@@ -53,14 +54,13 @@ class Header extends Component {
     }
 
     const h1 = {
-      color: "#EFEFEF",
+      color: "#EABC17",
       fontFamily: "Fjalla One",
-      fontSize: "70px",
+      fontSize: "65px",
       fontWeight: "300",
-      letterSpacing: this.state.hover ? "7px" : "3px",
-      paddingBottom: "5vh",
-      margin: "6vh 20vw 7vh 20vw",
-      borderBottom: "1vh dotted black",
+      paddingBottom: "3vh",
+      margin: "6vh 30vw 7vh 30vw",
+      borderBottom: "2vh dotted black",
     }
 
     const home = {
@@ -69,6 +69,7 @@ class Header extends Component {
     }
 
     const description = {
+      fontSize: "1.25vw",
       margin: "-4vh auto 2vh auto",
       color: "black",
     }
@@ -76,15 +77,15 @@ class Header extends Component {
     const selectBorough = {
       fontSize: "24px",
       backgroundColor: "black",
-      color: "#EFEFEF",
+      color: "#EFE7D2",
       padding: "15px",
-      // borderBottom: "1px solid #EFEFEF",
+      // borderBottom: "1px solid #EFE7D2",
       margin: "-5vh -5vw 5vh -5vw",
     }
 
     const image = {
       margin: "2vh 0 -20vh 0",
-      height: "31vh",
+      height: "35vh",
     }
 
     return (
@@ -95,7 +96,7 @@ class Header extends Component {
             onMouseLeave={this.hoverLeave}>
             <img src={skyline} alt="skyline" style={image} />
             <Link to="/" style={home} onClick={this.loadMenu}>
-              <h1 style={h1} className="siteHeader">Evolving NYC</h1>
+              <h1 style={h1} className="hoverHeader">Evolving NYC</h1>
             </Link>
             <p style={description}>Tracking reconstruction plans in the city using the NYC Department of Buildings permit database </p>
           </header >

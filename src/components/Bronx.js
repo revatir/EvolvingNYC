@@ -11,7 +11,6 @@ class Bronx extends Component {
   }
 
   render() {
-
     return (
       <div className="boroughWrapper">
         <h1 className="borough">Bronx</h1>
