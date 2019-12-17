@@ -35,7 +35,7 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: inherit;
+  color: black;
   background-color: #EFE7D2;
   font-size: 16px;
   width: 15vw;
@@ -44,7 +44,6 @@ li {
   border-radius: 15px;
   box-shadow: 6px 6px black;
   margin: .3vw;
-  text-decoration: none;
   transition: .5s;
 }
 
