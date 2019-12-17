@@ -1,15 +1,21 @@
 @import-normalize;
 
 body {
-  background-color: #EABC17;
+  background-color: black;
   font-family: "Poppins", sans-serif;
   text-align: center;
 }
 
 .headerWrapper {
+  background-color: black;
+  border-bottom: 5px black;
+}
+
+.imageWrapper {
+  background-color: #EABC17;
   background-image: url(./assets/skyline.png);
   background-repeat: repeat-x;
-  margin: -5vw -5vh -5vw -5vh;
+  margin: -5vw -5vh 0vw -5vh;
 }
 
 .boroughWrapper {
