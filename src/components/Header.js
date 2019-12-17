@@ -45,11 +45,11 @@ class Header extends Component {
       width: "100%",
     }
     const header = {
-      backgroundColor: "#4392F1",
+      backgroundColor: "#EFDDD2",
       paddingTop: "2vh",
-      paddingBottom: "4vh",
+      paddingBottom: "2vh",
       margin: "-5vh -5vw 2vh -5vw",
-      borderBottom: "2vh solid #EFDDD2",
+      borderBottom: ".5vh solid black",
     }
 
     const h1 = {
@@ -61,7 +61,7 @@ class Header extends Component {
       textShadow: "3px 4px black",
       paddingBottom: "5vh",
       margin: "6vh 20vw 7vh 20vw",
-      borderBottom: "1vh dotted #EFDDD2",
+      borderBottom: "1.5vh dotted black",
     }
 
     const home = {
@@ -70,7 +70,7 @@ class Header extends Component {
     }
 
     const description = {
-      margin: "-4vh auto 0vh auto",
+      margin: "-4vh auto 2vh auto",
       color: "black",
     }
 
@@ -79,11 +79,10 @@ class Header extends Component {
       color: "#EFDDD2",
       padding: "15px",
       borderBottom: "1px solid #EFDDD2",
-      margin: "3vh 35vw",
+      margin: "4vh 35vw",
     }
 
     const image = {
-      backgroundColor: "#4392F1",
       margin: "2vh 0 -20vh 0",
       height: "35vh"
     }
