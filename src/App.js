@@ -6,6 +6,7 @@ import { Route } from 'react-router-dom'
 
 //Custom Components
 import Header from './components/Header'
+import Footer from './components/Footer'
 import Bronx from './components/Bronx'
 import Brooklyn from './components/Brooklyn'
 import Manhattan from './components/Manhattan'

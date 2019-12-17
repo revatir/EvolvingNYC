@@ -6,12 +6,21 @@ function Menu(props) {
     display: "flex",
     listStyle: "none",
     justifyContent: "space-evenly",
-    marginRight: "5vh",
-    marginTop: "25vh",
+    marginRight: "10vh",
+    marginTop: "15vh",
   }
 
   const menuItem = {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
     color: "inherit",
+    backgroundColor: "#ECE8EF",
+    width: "10vw",
+    height: "10vw",
+    // border: "10px solid #DC493A",
+    // borderRadius: "5px",
+    margin: "1vw",
     textDecoration: "none",
   }
 

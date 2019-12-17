@@ -25,14 +25,20 @@ class Header extends Component {
   }
 
   render() {
+
     const h1 = {
+      color: "#DC493A",
+      backgroundColor: "#ECE8EF",
       fontSize: "45px",
-      marginTop: "5vh",
+      paddingTop: "5vh",
+      paddingBottom: "5vh",
+      marginTop: "0",
       marginBottom: "2vh",
     }
 
     const home = {
       color: "inherit",
+      backgroundColor: "#ECE8EF",
       textDecoration: "none",
     }
 
