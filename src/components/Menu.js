@@ -50,7 +50,7 @@ class Menu extends Component {
               onClick={this.props.loadMenu}
               onMouseEnter={this.hoverEnter}
               onMouseLeave={this.hoverLeave}>
-              <li id="Staten - Island">Staten Island</li></Link>
+              <li id="Staten-Island">Staten Island</li></Link>
           </ul>
         }
       </menu >

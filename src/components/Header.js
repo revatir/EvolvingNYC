@@ -45,7 +45,6 @@ class Header extends Component {
       width: "100%",
     }
     const header = {
-      backgroundColor: "#EFE7D2",
       backgroundImage: "../assets/skyline.png",
       paddingTop: "2vh",
       paddingBottom: "2vh",
@@ -56,11 +55,11 @@ class Header extends Component {
     const h1 = {
       color: "#EABC17",
       fontFamily: "Fjalla One",
-      fontSize: "65px",
+      fontSize: "60px",
       fontWeight: "300",
       paddingBottom: "3vh",
-      margin: "6vh 30vw 7vh 30vw",
-      borderBottom: "2vh dotted black",
+      margin: "8vh 30vw 7vh 30vw",
+      borderBottom: "1.5vh dotted black",
     }
 
     const home = {
@@ -85,7 +84,7 @@ class Header extends Component {
 
     const image = {
       margin: "2vh 0 -20vh 0",
-      height: "35vh",
+      height: "30vh",
     }
 
     return (
