@@ -57,6 +57,9 @@ li {
   height: 8vw;
   box-shadow: 1vw 1vh #EABC17;
   margin: .3vw;
+  animation-name: object-appear;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
   transition: .5s;
 }
 

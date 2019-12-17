@@ -67,8 +67,9 @@ class Header extends Component {
     const description = {
       color: "#EABC17",
       fontSize: "1.25vw",
+      fontWeight: "200",
       backgroundColor: "black",
-      padding: "25px",
+      padding: "25px 50px 50px 50px",
       margin: "-4vh 0 -3vh 0",
     }
 
@@ -78,8 +79,8 @@ class Header extends Component {
       backgroundColor: "black",
       color: "#EFE7D2",
       paddingTop: "5vh",
-      // borderBottom: "1px solid #EFE7D2",
-      margin: "-5vh -5vw 5vh -5vw",
+      borderTop: "1px solid #EABC17",
+      margin: "-8vh 5vw 5vh 6vw",
     }
 
     return (
