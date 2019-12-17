@@ -34,7 +34,6 @@ class App extends Component {
         <Header
           year={this.state.year}
         />
-        <Footer />
         <Route path="/" />
         <Route path="/Queens" render={(props) =>
           <Queens
@@ -56,6 +55,7 @@ class App extends Component {
           <StatenIsland
             year={this.state.year}
           />} />
+        <Footer />
       </div>
     );
   }
