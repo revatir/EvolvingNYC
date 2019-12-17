@@ -60,8 +60,8 @@ class Header extends Component {
       letterSpacing: "5px",
       textShadow: "3px 4px black",
       paddingBottom: "5vh",
-      margin: "6vh 25vw 7vh 25vw",
-      // borderBottom: "1vh dotted #EFDDD2",
+      margin: "6vh 20vw 7vh 20vw",
+      borderBottom: "1vh dotted #EFDDD2",
     }
 
     const home = {
