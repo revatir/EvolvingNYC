@@ -92,7 +92,7 @@ class Header extends Component {
             <Link to="/" style={home} onClick={this.loadMenu}>
               <h1 style={h1} className="hoverHeader">Evolving NYC</h1>
             </Link>
-            <p style={description}>Tracking reconstruction plans in the city using the NYC Department of Buildings permit database </p>
+            <p style={description}>Tracking Reconstruction Plans in New York City</p>
           </header >
         </div>
         {this.state.onHome &&
