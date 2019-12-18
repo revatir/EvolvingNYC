@@ -10,9 +10,7 @@ class Queens extends Component {
     this.state = {
     }
   }
-
   render() {
-
     return (
       <div className="boroughWrapper">
         <h1 className="borough">Manhattan</h1>

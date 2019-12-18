@@ -71,15 +71,8 @@ class BoroughData extends Component {
   }
 
   render() {
-    const dataContainer = {
-      display: "grid",
-      gridTemplateColumns: "10vw 10vw 10vw 10vw 10vw",
-      justifyContent: "center",
-      textAlign: "justify",
-    }
-
     return (
-      <div style={dataContainer} >
+      <div className="dataContainer">
         {
           this.props.year.map((year, index) =>
             <div key={index}>

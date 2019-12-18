@@ -4,9 +4,6 @@ import { Link } from 'react-router-dom'
 //Custom Component
 import Menu from "./Menu"
 
-//Images
-import skyline from "../assets/skyline.png"
-
 class Header extends Component {
   constructor(props) {
     super(props)
@@ -44,19 +41,19 @@ class Header extends Component {
     const header = {
       paddingTop: "2vh",
       paddingBottom: "2vh",
-      margin: "-5vh -5vw 5vh -5vw",
+      margin: "-5vh 0vw 5vh 0vw",
       // borderBottom: ".5vh solid black",
     }
 
     const h1 = {
-      color: "#EABC17",
+      color: "rgb(234, 174, 23)",
       fontFamily: "Fjalla One",
       fontSize: "60px",
       fontWeight: "300",
       padding: "2vh 2vw",
       margin: "25vh 30vw 5vh 30vw",
-      // borderBottom: "1.5vh dotted #EABC17",
-      border: "1px solid #EABC17",
+      // borderBottom: "1.5vh dotted rgb(234, 174, 23)",
+      border: "1px solid rgb(234, 174, 23)",
     }
 
     const home = {
@@ -65,8 +62,8 @@ class Header extends Component {
     }
 
     const description = {
-      color: "#EABC17",
-      fontSize: "1.25vw",
+      color: "rgb(234, 174, 23)",
+      fontSize: "2.5vh",
       fontWeight: "200",
       backgroundColor: "black",
       padding: "25px 50px 50px 50px",
@@ -79,8 +76,8 @@ class Header extends Component {
       backgroundColor: "black",
       color: "#EFE7D2",
       paddingTop: "5vh",
-      borderTop: "1px solid #EABC17",
-      margin: "-8vh 10vw 7vh 6vw",
+      borderTop: "1px solid rgb(234, 174, 23)",
+      margin: "-9vh 0vw 7vh 0vw",
     }
 
     return (
@@ -95,8 +92,10 @@ class Header extends Component {
             <p style={description}>Tracking Reconstruction Plans in New York City</p>
           </header >
         </div>
-        {this.state.onHome &&
-          <p style={selectBorough}>Select your Borough</p>}
+        {
+          this.state.onHome &&
+          <p style={selectBorough}>Select your Borough</p>
+        }
         <Menu
           onHome={this.state.onHome}
           loadMenu={this.loadMenu}

@@ -19,7 +19,7 @@ class App extends Component {
     super(props)
 
     this.state = {
-      year: [2000, 2001, 2002, 2003, 2004, 2005],
+      year: [2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019],
       onHome: true,
     }
   }
@@ -31,30 +31,32 @@ class App extends Component {
   render() {
     return (
       <div className="App" >
-        <Header
-          year={this.state.year}
-        />
-        <Route path="/" />
-        <Route path="/Queens" render={(props) =>
-          <Queens
+        <div className="Site-content">
+          <Header
             year={this.state.year}
-          />} />
-        <Route path="/Brooklyn" render={(props) =>
-          <Brooklyn
-            year={this.state.year}
-          />} />
-        <Route path="/Manhattan" render={(props) =>
-          <Manhattan
-            year={this.state.year}
-          />} />
-        <Route path="/Bronx" render={(props) =>
-          <Bronx
-            year={this.state.year}
-          />} />
-        <Route path="/StatenIsland" render={(props) =>
-          <StatenIsland
-            year={this.state.year}
-          />} />
+          />
+          <Route path="/" />
+          <Route path="/Queens" render={(props) =>
+            <Queens
+              year={this.state.year}
+            />} />
+          <Route path="/Brooklyn" render={(props) =>
+            <Brooklyn
+              year={this.state.year}
+            />} />
+          <Route path="/Manhattan" render={(props) =>
+            <Manhattan
+              year={this.state.year}
+            />} />
+          <Route path="/Bronx" render={(props) =>
+            <Bronx
+              year={this.state.year}
+            />} />
+          <Route path="/StatenIsland" render={(props) =>
+            <StatenIsland
+              year={this.state.year}
+            />} />
+        </div>
         <Footer />
       </div>
     );

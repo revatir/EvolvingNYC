@@ -9,12 +9,11 @@ class Brooklyn extends Component {
     this.state = {
     }
   }
-
   render() {
     return (
       <div className="boroughWrapper">
         <h1 className="borough">Brooklyn</h1>
-        <BoroughData year={this.props.year} />
+        <BoroughData year={this.props.year} className="boroughData" />
       </div >
     )
   }
