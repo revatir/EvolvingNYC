@@ -115,6 +115,11 @@ li:hover {
   cursor: pointer;
 }
 
+.yearData {
+  color: white;
+  text-align: justify;
+}
+
 @keyframes letter-spacing {
   0% {
     letter-spacing: 10px;
