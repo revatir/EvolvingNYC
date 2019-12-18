@@ -10,10 +10,7 @@ function Footer() {
     whiteSpace: "nowrap",
     padding: "2vh 10vw 2vh 10vw",
     border: "1px solid #EABC17",
-    marginTop: "0vh",
-    marginBottom: "2vh",
-    marginRight: "35vw",
-    marginLeft: "35vw",
+    margin: "0vh 35vw 2vh 33vw",
   }
 
   return (

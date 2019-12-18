@@ -76,7 +76,7 @@ class BoroughData extends Component {
         {
           this.props.year.map((year, index) =>
             <div key={index}>
-              <h4 onClick={() => this.getPermitData(year, index)}>{year}</h4>
+              <h4 onClick={() => this.getPermitData(year, index)} className="year">{year}</h4>
               {this.state.clicked && this.state.clickedComment === index ?
                 <PermitsIssued
                   lastYearDemolitionRatio={this.state.lastYearDemolitionRatio}
