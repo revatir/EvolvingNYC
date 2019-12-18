@@ -74,13 +74,13 @@ class Header extends Component {
     }
 
     const selectBorough = {
-      fontSize: "24px",
+      fontSize: "26px",
       fontWeight: "200",
       backgroundColor: "black",
       color: "#EFE7D2",
       paddingTop: "5vh",
       borderTop: "1px solid #EABC17",
-      margin: "-8vh 5vw 5vh 6vw",
+      margin: "-8vh 10vw 7vh 6vw",
     }
 
     return (

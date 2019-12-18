@@ -15,7 +15,7 @@ class Menu extends Component {
       display: "flex",
       listStyle: "none",
       justifyContent: "space-evenly",
-      marginRight: "6vw",
+      margin: "1vw 10vw 6vw 0vw",
     }
 
     const menuItem = {
