@@ -1,12 +1,7 @@
 @import-normalize;
 
-html, body {
-  height: 100%,
-}
-
-html, body {
+body {
   display: flex;
-  min-height: 100vh;
   flex-direction: column;
   background-color: black;
   font-family: "Poppins", sans-serif;
@@ -54,7 +49,7 @@ li {
   font-size: 1.25vw;
   width: 12vw;
   height: 8vw;
-  box-shadow: 1vw 1vh rgb(234, 174, 23);
+  box-shadow: 1vw 1vw rgb(234, 174, 23);
   margin: .3vw;
   animation-name: object-appear;
   animation-duration: 1s;
@@ -86,7 +81,7 @@ li:hover {
   font-size: 28px;
   background-color: rgb(234, 174, 23);
   color: black;
-  padding: 1.5vh;
+  padding: 1.5vw;
   margin: 4vw -1vw 1vw -1vw;
   border: 1px solid rgb(234, 174, 23);
   border-radius: 15px 15px 0px 0px;
@@ -107,11 +102,11 @@ li:hover {
 
 .year {
   background-color: white;
-  padding: 2vh 0vh 2vh 0vh;
-  box-shadow: .5vw .5vh rgb(234, 174, 23);
+  padding: 2vw 0vw 2vw 0vw;
+  box-shadow: .5vw .5vw rgb(234, 174, 23);
   text-align: center;
   width: 10vw;
-  height: 2vh;
+  height: 2vw;
   transition: .5s;
 }
 

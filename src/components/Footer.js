@@ -4,7 +4,7 @@ function Footer() {
 
   const footerWrapper = {
     backgroundColor: "black",
-    padding: "12vw 35vw",
+    padding: "12vw 35vw 0vw 35vw",
   }
 
   const footer = {
@@ -16,7 +16,7 @@ function Footer() {
     whiteSpace: "nowrap",
     padding: "1vw 5vw 1vw 6vw",
     border: "1px solid #EABC17",
-    margin: "-15vw 2vw",
+    margin: "-15vw 2vw 0vw 2vw",
   }
 
   return (
