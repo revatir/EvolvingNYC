@@ -16,8 +16,9 @@ class Menu extends Component {
       fontWeight: "200",
       backgroundColor: "black",
       color: "#EFE7D2",
-      paddingTop: "5vw",
-      margin: "-15vw 0vw 4vw -6vw",
+      paddingTop: "3vw",
+      borderTop: "1px solid rgb(234, 174, 23)",
+      margin: "-12vw 0vw 4vw -6vw",
     }
 
     const list = {
