@@ -40,18 +40,19 @@ class Header extends Component {
   render() {
     const header = {
       paddingTop: "2vh",
-      paddingBottom: "2vh",
-      margin: "-5vh 0vw 5vh 0vw",
-      // borderBottom: ".5vh solid black",
+      paddingBottom: "-15vh",
+      margin: "-5vw 0vw 5vw 0vw",
+      overflow: "hidden",
     }
 
     const h1 = {
       color: "rgb(234, 174, 23)",
+      backgroundColor: "black",
       fontFamily: "Fjalla One",
-      fontSize: "60px",
+      fontSize: "5vw",
       fontWeight: "300",
-      padding: "2vh 2vw",
-      margin: "25vh 30vw 5vh 30vw",
+      padding: "1.75vw 1.75vw",
+      margin: "15vw 25vw 1vw 25vw",
       // borderBottom: "1.5vh dotted rgb(234, 174, 23)",
       border: "1px solid rgb(234, 174, 23)",
     }
@@ -63,21 +64,11 @@ class Header extends Component {
 
     const description = {
       color: "rgb(234, 174, 23)",
-      fontSize: "2.5vh",
+      fontSize: "1.25vw",
       fontWeight: "200",
       backgroundColor: "black",
-      padding: "25px 50px 50px 50px",
-      margin: "-4vh 0 -3vh 0",
-    }
-
-    const selectBorough = {
-      fontSize: "26px",
-      fontWeight: "200",
-      backgroundColor: "black",
-      color: "#EFE7D2",
-      paddingTop: "5vh",
-      borderTop: "1px solid rgb(234, 174, 23)",
-      margin: "-9vh 0vw 7vh 0vw",
+      padding: "1.5vw 50px 50px 50px",
+      margin: "-19vw 0 -1vw 0",
     }
 
     return (
@@ -89,13 +80,9 @@ class Header extends Component {
             <Link to="/" style={home} onClick={this.loadMenu}>
               <h1 style={h1} className="hoverHeader">Evolving NYC</h1>
             </Link>
-            <p style={description}>Tracking Reconstruction Plans in New York City</p>
           </header >
+          <p style={description}>Tracking Reconstruction Trends in New York City</p>
         </div>
-        {
-          this.state.onHome &&
-          <p style={selectBorough}>Select your Borough</p>
-        }
         <Menu
           onHome={this.state.onHome}
           loadMenu={this.loadMenu}

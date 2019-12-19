@@ -2,19 +2,28 @@ import React from 'react'
 
 function Footer() {
 
+  const footerWrapper = {
+    backgroundColor: "black",
+    padding: "12vw 35vw",
+    margin: "1vw -35vw",
+  }
+
   const footer = {
     position: "absolute",
     color: "#EABC17",
-    fontSize: "1.8vh",
+    backgroundColor: "black",
+    fontSize: "1vw",
     fontWeight: "100",
     whiteSpace: "nowrap",
-    padding: "2vh 10vw 2vh 10vw",
+    padding: "1vw 5vw 1vw 6vw",
     border: "1px solid #EABC17",
-    margin: "0vh 35vw 2vh 33vw",
+    margin: "-10vw 35vw 0vw 38vw",
   }
 
   return (
-    <footer style={footer}>(c) Revati Rajabhathor</footer>
+    <div style={footerWrapper}> a
+      <footer style={footer}>(c) Revati Rajabhathor</footer>
+    </div>
   )
 }
 

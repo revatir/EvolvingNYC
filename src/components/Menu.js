@@ -11,19 +11,37 @@ class Menu extends Component {
   }
 
   render() {
+    const selectBorough = {
+      fontSize: "2vw",
+      fontWeight: "200",
+      backgroundColor: "black",
+      color: "#EFE7D2",
+      paddingTop: "5vw",
+      margin: "-6vw 0vw 4vw -6vw",
+    }
+
     const list = {
       display: "flex",
+      backgroundColor: "black",
       listStyle: "none",
       justifyContent: "space-evenly",
-      margin: "-1vw 9vw 6vw 0vw",
+      margin: "-2vw 9vw 6vw 0vw",
     }
 
     const menuItem = {
       textDecoration: "none",
     }
 
+    const menu = {
+      marginTop: "0vw",
+      backgroundColor: "black",
+    }
+
     return (
-      <menu>
+      <menu style={menu}>
+        {this.props.onHome &&
+          <p style={selectBorough}>Select your Borough</p>
+        }
         {this.props.onHome &&
           <ul style={list}>
             <Link style={menuItem} to="Queens"

@@ -15,7 +15,8 @@ body {
 
 .headerWrapper {
   background-color: black;
-  border-bottom: 5px black;
+  margin-top: -15vw;
+  margin-bottom: -6vw;
 }
 
 .hoverHeader {
@@ -27,10 +28,16 @@ body {
 }
 
 .imageWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: rgb(234, 174, 23);
+  /* background-color: black; */
   background-image: url(./assets/skyline.png);
   background-repeat: repeat-x;
-  margin: -5vw -5vh -0vw -5vh;
+  height: 50vw;
+  margin-top: -20vw;
+  background-size: 100% 100%; 
 }
 
 li {
@@ -39,7 +46,7 @@ li {
   align-items: center;
   color: black;
   background-color: #EFE7D2;
-  font-size: 15px;
+  font-size: 1.25vw;
   width: 12vw;
   height: 8vw;
   box-shadow: 1vw 1vh rgb(234, 174, 23);
@@ -63,9 +70,9 @@ li:hover {
 }
 
 .boroughWrapper {
-  /* background-color:rgb(255, 225, 168); */
-  padding: 1vw;
-  margin: -6vh 8vw 3vh 8vw;
+  background-color:black;
+  padding: 1vh 10vw;
+  margin: -0;
   border-radius: 15px;
   animation-name: object-appear;
   animation-duration: .75s;
@@ -73,12 +80,12 @@ li:hover {
 }
 
 .borough {
-  font-weight: 100;
-  font-size: 30px;
-  background-color: black;
-  color: rgb(255, 203, 107);
-  padding: 3vh;
-  margin: -1vw -1vw 1vw -1vw;
+  font-weight: 500;
+  font-size: 28px;
+  background-color: rgb(234, 174, 23);
+  color: black;
+  padding: 1.5vh;
+  margin: 4vw -1vw 1vw -1vw;
   border: 1px solid rgb(234, 174, 23);
   border-radius: 15px 15px 0px 0px;
 }
@@ -118,6 +125,18 @@ li:hover {
 .yearData {
   color: white;
   text-align: justify;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+/* .dataType {
+  color: white;
+  font-weight: 400;
+} */
+
+.percentData {
+  color: rgb(234, 174, 23);
+  font-weight: 500;
 }
 
 @keyframes letter-spacing {
