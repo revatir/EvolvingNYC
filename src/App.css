@@ -59,12 +59,10 @@ body {
   background-image: url(./assets/skyline.png);
   background-repeat: repeat-x;
   height: 50vw;
-  margin-top: -20vw;
   background-size: 100% 100%;
   padding-top: 2vh;
   padding-bottom: -15vh;
   margin: -5vw 0vw 5vw 0vw;
-  overflow: hidden; 
 }
 
 .selectBorough {
@@ -123,7 +121,7 @@ li:hover {
 
 .boroughWrapper {
   background-color:black;
-  padding: 0vw 10vw;
+  padding: 0vw 15vw;
   border-top: 1px solid rgb(234, 174, 23);
   margin-top: -12vw;
   margin-bottom: 5vw;
@@ -131,7 +129,7 @@ li:hover {
 
 .borough {
   font-weight: 600;
-  font-size: 28px;
+  font-size: 2.5vw;
   background-color: rgb(234, 174, 23);
   color: black;
   text-shadow: 4px 2px #EFE7D2;
@@ -155,12 +153,13 @@ li:hover {
 }
 
 .year {
+  font-size: 1.25vw;
   background-color: white;
-  padding: 2vw 0vw 2vw 0vw;
-  box-shadow: .5vw .5vw rgb(234, 174, 23);
   text-align: center;
+  box-shadow: .5vw .5vw rgb(234, 174, 23);
   width: 9vw;
   height: 1vw;
+  padding: 2vw 0vw 2vw 0vw;
   transition: .5s;
 }
 
@@ -168,7 +167,7 @@ li:hover {
   justify-content: center;
   color: white;
   background-color: rgb(234, 174, 23);
-  font-size: 16px;
+  font-size: 1.25vw;
   font-weight: 600;
   text-shadow: 4px 3px 1px rgb(136, 66, .7);
   box-shadow: 4px 4px white;
@@ -179,7 +178,7 @@ li:hover {
 .yearData {
   color: white;
   text-align: justify;
-  font-size: 14px;
+  font-size: 1.25vw;
   font-weight: 200;
 }
 
@@ -225,3 +224,23 @@ li:hover {
     opacity: 100%;
   }
 } 
+
+@media screen and (max-width: 639px) {
+
+}
+@media screen and (max-width: 1047px) {
+  .description {
+    padding: 3vw 50px 3.5vw 50px;
+    margin: -20vw -1vw -1vw -1vw;
+  }
+  .imageWrapper {
+    background-repeat: ;
+    background-size: 100% 100%;
+    padding-top: 2vh;
+    padding-bottom: -15vh;
+    margin: -5vw -1vw 5vw -1vw;
+  }
+}
+@media screen and (min-width: 1048px) {
+
+}
