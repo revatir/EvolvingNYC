@@ -263,6 +263,23 @@ li:hover {
     height: 12vw;
   }
 
+  .borough {
+    font-size: 3vw;
+  }
+  .year {
+    font-size: 1.85vw;
+    box-shadow: 1vw 1vw rgb(234, 174, 23);
+    width: 15vw;
+    height: 2vw;
+    padding: 3vw 0vw 3vw 0vw;
+    margin: 1vw;
+  }
+  
+  .year:hover {
+    font-size: 2vw;
+    box-shadow: 1vw 1vw white;
+  }
+
   .footer {
     font-size: 1.25vw;
   }
@@ -316,13 +333,6 @@ li:hover {
 
   .borough {
     font-size: 4vw;
-    background-color: rgb(234, 174, 23);
-    color: black;
-    text-shadow: .5vw .2vw #EFE7D2;
-    padding: 1.5vw;
-    margin: 4vw -1vw 1vw -1vw;
-    border: 1px solid rgb(234, 174, 23);
-    border-radius: 15px 15px 0px 0px;
   }
   .year {
     font-size: 2.5vw;
@@ -335,7 +345,7 @@ li:hover {
   
   .year:hover {
     font-size: 3vw;
-    box-shadow: 1.5vw 1.5vw white;
+    box-shadow: 1vw 1vw white;
   }
 
   .footer {
