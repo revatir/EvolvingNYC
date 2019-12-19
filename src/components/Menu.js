@@ -17,7 +17,7 @@ class Menu extends Component {
       backgroundColor: "black",
       color: "#EFE7D2",
       paddingTop: "5vw",
-      margin: "-6vw 0vw 4vw -6vw",
+      margin: "-15vw 0vw 4vw -6vw",
     }
 
     const list = {
@@ -33,7 +33,7 @@ class Menu extends Component {
     }
 
     const menu = {
-      marginTop: "0vw",
+      marginTop: "-10vw",
       backgroundColor: "black",
     }
 

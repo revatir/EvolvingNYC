@@ -1,6 +1,10 @@
 @import-normalize;
 
-body {
+html, body {
+  height: 100%,
+}
+
+html, body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
@@ -15,8 +19,9 @@ body {
 
 .headerWrapper {
   background-color: black;
+  padding: 1vw;
   margin-top: -15vw;
-  margin-bottom: -6vw;
+  margin-bottom: 10vw;
 }
 
 .hoverHeader {
@@ -71,9 +76,9 @@ li:hover {
 
 .boroughWrapper {
   background-color:black;
-  padding: 1vh 10vw;
-  margin: -0;
-  border-radius: 15px;
+  padding: 1vw 10vw;
+  margin-top: -15vw;
+  margin-bottom: 5vw;
 }
 
 .borough {

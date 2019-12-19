@@ -5,11 +5,10 @@ function Footer() {
   const footerWrapper = {
     backgroundColor: "black",
     padding: "12vw 35vw",
-    margin: "1vw -35vw",
   }
 
   const footer = {
-    position: "absolute",
+    position: "relative",
     color: "#EABC17",
     backgroundColor: "black",
     fontSize: "1vw",
@@ -17,11 +16,11 @@ function Footer() {
     whiteSpace: "nowrap",
     padding: "1vw 5vw 1vw 6vw",
     border: "1px solid #EABC17",
-    margin: "-10vw 35vw 0vw 38vw",
+    margin: "-15vw 2vw",
   }
 
   return (
-    <div style={footerWrapper}> a
+    <div style={footerWrapper}>
       <footer style={footer}>(c) Revati Rajabhathor</footer>
     </div>
   )
