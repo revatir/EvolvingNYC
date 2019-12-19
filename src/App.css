@@ -1,5 +1,9 @@
 @import-normalize;
 
+html {
+  height: 100%;
+  height: 100%;
+}
 body {
   display: flex;
   flex-direction: column;
@@ -131,7 +135,7 @@ li:hover {
   font-size: 2.5vw;
   background-color: rgb(234, 174, 23);
   color: black;
-  text-shadow: 4px 2px #EFE7D2;
+  text-shadow: .5vw .2vw #EFE7D2;
   padding: 1.5vw;
   margin: 4vw -1vw 1vw -1vw;
   border: 1px solid rgb(234, 174, 23);
@@ -227,13 +231,13 @@ li:hover {
 /* Medium Screen Size */
 @media screen and (max-width: 1047px) { 
   .header {
-    font-size: 6vw;
+    font-size: 5.75vw;
     padding: 2vw 2vw;
-    margin: 15vw 20vw 5vw 20vw;
+    margin: 16vw 22vw 5vw 22vw;
   }
 
   .imageWrapper {
-    background-size: 100% 100%;
+    background-size: 135% 100%;
     padding-top: 2vh;
     padding-bottom: -15vh;
     margin: -5vw -1vw 5vw -1vw;
@@ -272,6 +276,13 @@ li:hover {
     margin: 15vw 10vw 5vw 10vw;
   }
 
+  .imageWrapper {
+    background-size: 175% 100%;
+    padding-top: 2vh;
+    padding-bottom: -15vh;
+    margin: -5vw -1vw 5vw -1vw;
+  }
+
   .description {
     font-size: 2.5vw;
 }
@@ -303,10 +314,34 @@ li:hover {
     margin: 2vw 5vw;
   }
 
+  .borough {
+    font-size: 4vw;
+    background-color: rgb(234, 174, 23);
+    color: black;
+    text-shadow: .5vw .2vw #EFE7D2;
+    padding: 1.5vw;
+    margin: 4vw -1vw 1vw -1vw;
+    border: 1px solid rgb(234, 174, 23);
+    border-radius: 15px 15px 0px 0px;
+  }
+  .year {
+    font-size: 2.5vw;
+    box-shadow: 1vw 1vw rgb(234, 174, 23);
+    width: 23vw;
+    height: 5vw;
+    padding: 4vw 0vw 2vw 0vw;
+    margin: 1vw;
+  }
+  
+  .year:hover {
+    font-size: 3vw;
+    box-shadow: 1.5vw 1.5vw white;
+  }
+
   .footer {
     font-size: 2vw;
     padding: 1vw 5vw 1vw 6vw;
-    margin: -15vw -5vw -0vw -10vw;
+    margin: -15vw -5vw -0vw -5vw;
   }
 }
 
