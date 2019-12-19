@@ -11,40 +11,17 @@ class Menu extends Component {
   }
 
   render() {
-    const selectBorough = {
-      fontSize: "2vw",
-      fontWeight: "200",
-      backgroundColor: "black",
-      color: "#EFE7D2",
-      paddingTop: "3vw",
-      borderTop: "1px solid rgb(234, 174, 23)",
-      margin: "-12vw 0vw 4vw -6vw",
-    }
-
-    const list = {
-      display: "flex",
-      backgroundColor: "black",
-      listStyle: "none",
-      justifyContent: "space-evenly",
-      margin: "-2vw 9vw 6vw 0vw",
-    }
-
     const menuItem = {
       textDecoration: "none",
     }
 
-    const menu = {
-      marginTop: "-10vw",
-      backgroundColor: "black",
-    }
-
     return (
-      <menu style={menu}>
+      <menu className="menu">
         {this.props.onHome &&
-          <p style={selectBorough}>Select your Borough</p>
+          <p className="selectBorough">Select your Borough</p>
         }
         {this.props.onHome &&
-          <ul style={list}>
+          <ul className="list">
             <Link style={menuItem} to="Queens"
               onClick={this.props.loadMenu}
               onMouseEnter={this.hoverEnter}
