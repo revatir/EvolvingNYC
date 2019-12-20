@@ -79,7 +79,6 @@ class BoroughData extends Component {
           this.props.year.map((year, index) =>
             <div key={index} className="yearContainer">
               <h4 onClick={() => this.getPermitData(year, index)} className="year">{year}</h4>
-              {/* {this.state.clicked && this.state.recentlyClickedId === index ? */}
               <PermitsIssued
                 lastYearDemolitionRatio={this.state.lastYearDemolitionRatio}
                 lastYearNewBuildingRatio={this.state.lastYearNewBuildingRatio}
@@ -87,8 +86,6 @@ class BoroughData extends Component {
                 newBuildingPermits={this.state.newBuildingPermits}
                 shouldOpen={this.state.recentlyClickedId === index ? true : false}
               />
-              : null
-              {/* } */}
             </div>
           )
         }

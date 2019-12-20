@@ -26,7 +26,8 @@ src
     2. Documentation - https://dev.socrata.com/foundry/data.cityofnewyork.us/ipu4-2q9a
 6. <b>MVP:</b> A website where you can click on your borough of interest and then year of interest to see the number of demolition permits and new building permits issued for that year. 
 7. <b>Post-MVP: </b>
-    1. For each year you click on, I want to display the % change from the previous year
+    1. For each year you click on, I want to display the % change from the previous year - COMPLETED
+    2. I want the user to be able to choose the year they want to compare against
     2. I want to allow the user to click on their counsel district and/or neighborhood (ie. Bushwick, Lower East Side) to see data relevant to their area.
     3. I want to display important details from these permits when the user clicks on them (depending on how many there are). The user should be able to see a) date of issuance, b) job start date, c) name of the permit holder (i.e. who is instructing the work), d) building address and e) the whether the construction/demolition is residential or commercial. I would also like to connect demolitions to their expected new construction by detecting the same address. 
     4. Add “Neighborhoods of Interest” page where you can add favorite neighborhoods (when we learn backend, it would be cool to send email alerts to users about their neighborhoods).

@@ -112,15 +112,15 @@ li {
 }
 
 li:hover {
-  color: white;
+  color: #EFE7D2;
   width: 14vw;
   height: 9vw;
   background-color: rgb(234, 174, 23);
   font-size: 1.5vw;
   font-weight: 700;
   text-shadow: 4px 3px 2px rgb(136, 66, .8);
-  box-shadow: 6px 6px white;
-  border: 2px solid white;
+  box-shadow: 6px 6px #EFE7D2;
+  border: 2px solid #EFE7D2;
 }
 
 .boroughWrapper {
@@ -154,35 +154,38 @@ li:hover {
 
 .yearContainer {
   margin: 1vw;
+
 }
 
 .year {
   font-size: 1.25vw;
-  background-color: white;
+  background-color: #EFE7D2;
   text-align: center;
   box-shadow: .5vw .5vw rgb(234, 174, 23);
-  width: 9vw;
-  height: 1vw;
+  width: 10vw;
+  height: 2vw;
   padding: 2vw 0vw 2vw 0vw;
+  margin-top: -1vw;
+  margin-left: -.5vw;
   transition: .5s;
 }
 
 .year:hover {
   justify-content: center;
-  color: white;
+  color: #EFE7D2;
   background-color: rgb(234, 174, 23);
   font-size: 1.25vw;
   font-weight: 600;
   text-shadow: 4px 3px 1px rgb(136, 66, .7);
-  box-shadow: 4px 4px white;
-  border: 1px solid white;
+  box-shadow: 4px 4px #EFE7D2;
+  border: 2px solid #EFE7D2;
   cursor: pointer;
 }
 
 .yearData {
-  color: white;
-  text-align: justify;
-  font-size: 1.25vw;
+  color: #EFE7D2;
+  text-align: center;
+  font-size: 1.1vw;
   font-weight: 200;
 }
 
@@ -202,7 +205,7 @@ li:hover {
   background-color: black;
   font-size: 1vw;
   font-weight: 100;
-  white-space: nowrap;
+  #EFE7D2-space: nowrap;
   padding: 1vw 5vw 1vw 6vw;
   border: 1px solid #EABC17;
   margin: -15vw 2vw -0vw 2vw;
@@ -278,8 +281,14 @@ li:hover {
   
   .year:hover {
     font-size: 2vw;
-    box-shadow: 1vw 1vw white;
+    box-shadow: 1vw 1vw #EFE7D2;
   }
+
+  .yearData {
+    margin-top: 3vw;
+    font-size: 1.5vw;
+  }
+
 
   .footer {
     font-size: 1.25vw;
@@ -289,21 +298,21 @@ li:hover {
 /* Small Screen Size */
 @media screen and (max-width: 769px) {
   .header {
-    font-size: 9vw;
+    font-size: 10vw;
     padding: 2vw 2vw;
-    margin: 18vw 10vw 5vw 10vw;
+    margin: 22vw 6vw 5vw 6vw;
   }
 
   .imageWrapper {
-    background-size: 175% 100%;
+    background-size: 180% 100%;
     padding-top: 2vh;
     padding-bottom: -15vh;
-    margin: -5vw -1vw 5vw -1vw;
+    margin: -1vw -1vw 5vw -1vw;
   }
 
   .description {
-    font-size: 2.5vw;
-    padding: 5vw;
+    font-size: 4vw;
+    padding-top: 8vw;
 }
 
 menu {
@@ -328,7 +337,7 @@ menu {
     font-size: 5vw;
     font-weight: 700;
     width: 80vw;
-    height: 20vw;
+    height: 18vw;
     margin: 1vw auto;
   }
 
@@ -341,20 +350,20 @@ menu {
   }
 
   .borough {
-    font-size: 4vw;
+    font-size: 5vw;
   }
   .year {
-    font-size: 2.5vw;
+    font-size: 3.25vw;
     box-shadow: 1vw 1vw rgb(234, 174, 23);
-    width: 23vw;
+    width: 65vw;
     height: 5vw;
     padding: 4vw 0vw 2vw 0vw;
-    margin: 1vw;
+    margin: 0vw;
   }
   
   .year:hover {
-    font-size: 3vw;
-    box-shadow: 1vw 1vw white;
+    font-size: 3.5vw;
+    box-shadow: 1vw 1vw #EFE7D2;
   }
 
   .yearData {
