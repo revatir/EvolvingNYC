@@ -21,6 +21,7 @@ class BoroughData extends Component {
 
   getPermitData = async (year, clickedId) => {
     //Establishing Click Functionality
+      //In state, set recentlyClickedId as the index of the clicked year.
     let recentlyClickedId = this.state.recentlyClickedId;
     recentlyClickedId = clickedId;
 
