@@ -20,16 +20,17 @@ class BoroughData extends Component {
   }
 
   getPermitData = async (year, clickedId) => {
-    //Establishing Click Functionality
-      //In state, set recentlyClickedId as the index of the clicked year.
+    ///Establishing Click Functionality
+    //In state, set recentlyClickedId as the index of the clicked year.
     let recentlyClickedId = this.state.recentlyClickedId;
     recentlyClickedId = clickedId;
 
+    //Changed to uppercase because API does not accept lowercase requests.
     let borough = document.querySelector(".borough").innerHTML;
     borough = borough.toUpperCase();
 
 
-    //Pulling Permit Data
+    ///Pulling Permit Data
     let demolitionPermits = this.state.demolitionPermits;
     let newBuildingPermits = this.state.newBuildingPermits;
     let previousYearDemolitionResponse = await FetchData("DM", borough, year - 1);
@@ -40,7 +41,7 @@ class BoroughData extends Component {
     demolitionPermits = demolitionResponse.length;
     newBuildingPermits = newBuildingResponse.length
 
-    //Calculating Percent Change from Data
+    //Calculating Percent Change
     let percentChange = (A, B) =>
       Math.round(
         100 * Math.abs(
@@ -50,7 +51,7 @@ class BoroughData extends Component {
     ;
     let lastYearDemolitionRatio = percentChange(previousYearDemolitionResponse.length, demolitionPermits);
     let lastYearNewBuildingRatio = percentChange(previousYearNewBuildingResponse.length, newBuildingPermits);
-
+    ///Instructs page to show only the clicked element (and close all others)
     if (this.state.recentlyClickedId === clickedId) {
       //Setting State
       this.setState({
@@ -85,6 +86,7 @@ class BoroughData extends Component {
                 lastYearNewBuildingRatio={this.state.lastYearNewBuildingRatio}
                 demolitionPermits={this.state.demolitionPermits}
                 newBuildingPermits={this.state.newBuildingPermits}
+                //getPermitData() takes the index of the clicked item as a paramenter. If the clicked element equals the index, data will be displayed. If not, state for all the others will be set to zero (including their recentlyClickedID). Because the recentlyClicked ID for the others do not match the index (and are therefore false), they will not display.
                 shouldOpen={this.state.recentlyClickedId === index ? true : false}
               />
             </div>
