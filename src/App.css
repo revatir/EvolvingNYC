@@ -89,7 +89,7 @@ menu {
   background-color: black;
   list-style: none;
   justify-content: space-evenly;
-  margin: -2vw 9vw 6vw 0vw;
+  margin: -2vw 9vw 4vw 0vw;
 }
 
 
@@ -121,6 +121,14 @@ li:hover {
   text-shadow: 4px 3px 2px rgb(136, 66, .8);
   box-shadow: 6px 6px #EFE7D2;
   border: 2px solid #EFE7D2;
+}
+
+.homePageBlurb {
+  color: #EFE7D2;
+  font-weight: 200;
+  font-size: 1.25vw;
+  text-align: justify;
+  margin: 1vw 10vw 7vw 6.5vw;
 }
 
 .boroughWrapper {
@@ -267,6 +275,10 @@ li:hover {
     height: 12vw;
   }
 
+  .homePageBlurb {
+    font-size: 1.5vw;
+  }
+
   .borough {
     font-size: 3vw;
   }
@@ -349,6 +361,11 @@ menu {
     margin: 2vw auto;
   }
 
+  .homePageBlurb {
+    font-size: 3vw;
+    margin: 7vw 2vw;
+  }
+
   .borough {
     font-size: 5vw;
   }
@@ -380,8 +397,4 @@ menu {
     padding: 1vw 5vw 1vw 6vw;
     margin: -5vw -5vw -0vw -5vw;
   }
-}
-
-@media screen and (min-width: 1048px) {
-
 }
