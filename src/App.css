@@ -1,8 +1,9 @@
 @import-normalize;
 
 html {
-  height: 100%;
-  height: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 body {
   display: flex;
@@ -35,7 +36,7 @@ body {
   font-weight: 200;
   background-color: black;
   padding: 1.5vw 50px 50px 50px;
-  margin: -19vw 0 -1vw 0;
+  margin: -19vw auto -1vw auto;
 }
 
 .header {
@@ -65,7 +66,7 @@ body {
   background-size: 100% 100%;
   padding-top: 2vh;
   padding-bottom: -15vh;
-  margin: -5vw 0vw 5vw 0vw;
+  margin: -5vw auto 5vw auto;
 }
 
 .selectBorough {
@@ -75,7 +76,7 @@ body {
   color: #EFE7D2;
   padding-top: 3vw;
   border-top: 1px solid rgb(234, 174, 23);
-  margin: -12vw 0vw 4vw -6vw;
+  margin: -12vw 0 4vw -7vw;
 }
 
 menu {
@@ -244,7 +245,7 @@ li:hover {
   }
 
   .description {
-    font-size: 2vw;
+    font-size: 1.75vw;
     padding: 3vw 50px 3.5vw 50px;
     margin: -20vw -1vw -1vw -1vw;
   }
@@ -286,11 +287,11 @@ li:hover {
 }
 
 /* Small Screen Size */
-@media screen and (max-width: 639px) {
+@media screen and (max-width: 769px) {
   .header {
-    font-size: 8vw;
+    font-size: 9vw;
     padding: 2vw 2vw;
-    margin: 15vw 10vw 5vw 10vw;
+    margin: 18vw 10vw 5vw 10vw;
   }
 
   .imageWrapper {
@@ -302,33 +303,41 @@ li:hover {
 
   .description {
     font-size: 2.5vw;
+    padding: 5vw;
+}
+
+menu {
+  padding-left: 0;
+  margin: auto 0;
 }
 
   .selectBorough {
-    font-size: 3.5vw;
-    margin: -10vw 0vw 4vw -7vw;
+    font-size: 5vw;
+    margin: -10vw 0vw 3vw 0vw;
   }
 
   .list {
+    min-height: 70vh;
     display: flex;
     flex-direction: column;
-    margin: -2vw 10vw 6vw 0vw;  
+    margin: -2vw 0vw 6vw 0vw;
+    padding-left: 0;
   }
 
   li { 
     font-size: 5vw;
     font-weight: 700;
-    width: 55vw;
-    height: 10vw;
-    margin: 2vw 5vw;
+    width: 80vw;
+    height: 20vw;
+    margin: 1vw auto;
   }
 
   li:hover { 
     font-size: 5vw;
     font-weight: 700;
-    width: 55vw;
-    height: 10vw;
-    margin: 2vw 5vw;
+    width: 80vw;
+    height: 20vw;
+    margin: 2vw auto;
   }
 
   .borough {
@@ -348,10 +357,18 @@ li:hover {
     box-shadow: 1vw 1vw white;
   }
 
+  .yearData {
+    font-size: 2.5vw;
+  }
+
+  .footerWrapper {
+    margin: -10vw -5vw -50vw -5vw;
+  }
+
   .footer {
     font-size: 2vw;
     padding: 1vw 5vw 1vw 6vw;
-    margin: -15vw -5vw -0vw -5vw;
+    margin: -5vw -5vw -0vw -5vw;
   }
 }
 
