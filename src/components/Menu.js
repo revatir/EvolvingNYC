@@ -50,7 +50,7 @@ class Menu extends Component {
           </ul>
         }
         {this.props.onHome &&
-          <p className="homePageBlurb">Evolving NYC aims to track reconstruction plans in the city by using the NYC Department of Buildings permit database. It shows how many Demolition permits and "New Building" permits were issued in the last 19 years, and depict this data by year. The ultimate goal is to create a tool that organically tracks plans for development in the city so residents can see projected changes in their community. </p>
+          <p className="homePageBlurb">Evolving NYC aims to track reconstruction plans in the city using the NYC Department of Buildings permit database. By selecting a borough you will be able to see how many demolition and new building permits were issued each year for the last 19 years. The ultimate goal is to create a tool that organically tracks plans for development in the city so residents can see projected changes in their community. </p>
         }
       </menu >
     )
